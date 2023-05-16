@@ -1,25 +1,67 @@
 import React from "react";
-import './Header.css';
+import styled from "styled-components";
 
 const Header = () => {
-  return (
-    <header>
-      <div className="my_data">
-        <img src="../../img/Logo.png" />
-        <p>Mauricio Coronel</p>
-      </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Hobbies</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Projects</a></li>
-          <li className="contact">8mau.coronel@gmail.com</li>
-        </ul>
-      </nav>
-    </header>
+  const StyledHeader = styled.header`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  `
+
+  const MyData = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  `
+
+  const Logo = styled.img`
+  height: 35px;
+  `
+
+  const Name = styled.p`
+  font-weight: 600;
+  padding-left: 1rem;
+  `
+
+  const Navigation = styled.nav`
+  width: 50%;
+  `
+
+  const Ul = styled.ul`
+  display: flex;
+  justify-content: space-evenly;
+  `
+
+  const Link = styled.a`
+  text-decoration: none;
+  color: black;
+  color: #263A47;
+  `
+
+  const Contact = styled.li`
+  font-weight: bold;
+  `
+
+  return (
+    <StyledHeader>
+      <MyData className="my_data">
+        <Logo className="Logo" src="../../img/Logo.png" />
+        <Name>Mauricio Coronel</Name>
+      </MyData>
+
+      <Navigation>
+        <Ul>
+          <li><Link href="#">About me</Link></li>
+          <li><Link href="#">Skills</Link></li>
+          <li><Link href="#">Hobbies</Link></li>
+          <li><Link href="#">Education</Link></li>
+          <li><Link href="#">Projects</Link></li>
+          <Contact>8mau.coronel@gmail.com</Contact>
+        </Ul>
+      </Navigation>
+    </StyledHeader>
   )
 }
 
