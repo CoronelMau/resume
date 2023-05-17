@@ -13,23 +13,36 @@ const AboutMe = styled.div`
 display: flex;
 flex-direction: column;
 width: 90%;
+@media (max-width: 768px) {
+  width: 100%;
+}
 `
 
 const MainTitle = styled.h1`
 font-size: 2.5rem;
 font-weight: bold;
 color: #4a5b6a;
+@media (max-width: 768px) {
+  font-size: 22px;
+}
 `
 
 const AboutText = styled.p`
 font-size: 1.1rem;
 padding: 1.5rem 0;
-line-height: 1.2;`
+line-height: 1.2;
+@media (max-width: 768px) {
+  font-size: 16px;
+}
+`
 
 const MePhoto = styled.img`
 height: 368px;
 border-radius: 50%;
 padding-right: 3rem;
+@media (max-width: 768px) {
+  height: 146px;
+}
 `
 
 const SocialMedia = styled.ul`

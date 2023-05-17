@@ -7,10 +7,14 @@ padding-bottom: 2rem;
 color: #4a5b6a;
 `
 
+const Important = styled.span`
+font-weight: bold;
+`
+
 const Footer = () => {
   return (
     <Section>
-      <h1>Created by Mauricio Coronel</h1>
+      <h1>Created by <Important>Mauricio Coronel</Important></h1>
       <h2>2023</h2>
     </Section>
   );

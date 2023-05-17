@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { useState } from "react";
 import TextField from '@mui/material/TextField';
 import Button from "@mui/material/Button"
+import { validName, validEmail, validSubject } from "./validation";
 
 const Section = styled.section`
 margin-top: 3rem;
@@ -12,7 +14,7 @@ flex-direction: column;
 align-items: center;
 `
 
-const Container = styled.div`
+const Form = styled.form`
 width: 50%;
 `
 
@@ -29,21 +31,76 @@ const Text = styled.p`
 padding-bottom: 1rem;
 `
 
-const FieldsList = [
-  { id: 1, label: "Name" },
-  { id: 2, label: "Email" },
-  { id: 1, label: "Subject" },
-]
-
 const Contact = () => {
+
+  //UseState
+  const [name, setName] = useState({ value: "", valid: true });
+  const [email, setEmail] = useState({ value: "", valid: true });
+  const [subject, setSubject] = useState({ value: "", valid: true });
+  const [observation, setObservation] = useState({ value: "", valid: true });
+
+
   return (
     <Section>
-      <Container>
+      <Form
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log("Name: " + name.value);
+          console.log("Email: " + email.value);
+          console.log("Subject: " + subject.value);
+          console.log("Observation: " + observation.value);
+        }}
+      >
         <Title>Contact </Title>
         <Text>Want to contact me? Fill the following fields and I will get in touch with you soon! </Text>
 
-        {FieldsList.map(({ id, label }) =>
-          <TextField fullWidth id={id} label={label} variant="filled" margin="normal" />)}
+        <TextField
+          fullWidth
+          label="Name"
+          variant="filled"
+          margin="normal"
+          required
+          error={!name.valid}
+          helperText={!name.valid && "Invalid name"}
+          onChange={(input) => {
+            const name = input.target.value;
+            setName({
+              value: name, valid: validName(name)
+            })
+          }}
+        />
+
+        <TextField
+          fullWidth
+          label="Email"
+          variant="filled"
+          margin="normal"
+          required
+          error={!email.valid}
+          helperText={!email.valid && "Invalid email"}
+          onChange={(input) => {
+            const email = input.target.value;
+            setEmail({
+              value: input.target.value, valid: validEmail(email)
+            })
+          }}
+        />
+
+        <TextField
+          fullWidth
+          label="Subject"
+          variant="filled"
+          margin="normal"
+          required
+          error={!subject.valid}
+          helperText={!subject.valid && "Invalid subject"}
+          onChange={(input) => {
+            const subject = input.target.value;
+            setSubject({
+              value: input.target.value, valid: validSubject(subject)
+            })
+          }}
+        />
 
         <TextField
           id="outlined-multiline-static"
@@ -53,9 +110,10 @@ const Contact = () => {
           variant="filled"
           fullWidth
           margin="normal"
+          onChange={(input) => setObservation({ value: input.target.value, valid: true })}
         />
-        <Button variant="contained">Submit</Button>
-      </Container>
+        <Button type="submit" variant="contained">Submit</Button>
+      </Form>
     </Section>
   );
 }

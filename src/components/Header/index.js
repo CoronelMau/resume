@@ -38,7 +38,9 @@ const Header = () => {
   const Link = styled.a`
   text-decoration: none;
   color: black;
-
+  @media (max-width: 1200px){
+    display: none;
+  }
   `
 
   const Contact = styled.li`

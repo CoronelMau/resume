@@ -13,12 +13,18 @@ const AboutMeHeader = styled.h1`
 font-size: 32px;
 font-weight: bold;
 color:#4a5b6a;
+@media (max-width: 768px) {
+  font-size: 22px;
+}
 `
 
 const AboutMeText = styled.p`
 padding-top: 1rem;
 line-height: 1.3;
 text-align: justify;
+@media (max-width: 768px) {
+  font-size: 14px;
+}
 `
 
 const Important = styled.span`
@@ -26,6 +32,13 @@ font-weight: bold;
 color: #4a5b6a;
 `
 
+const Signature = styled.img`
+  padding-top: 2rem;
+  height: 12rem;
+  @media (max-width: 768px) {
+ height: 6rem;
+}
+`
 
 const Information = () => {
 
@@ -41,6 +54,7 @@ const Information = () => {
           I'm a very competitive person, who likes great challenges and does he's best in every single one of them.
           Also, I do well with teams, trying to contribute and expecting to get something out of every project.
         </AboutMeText>
+        <Signature src="../../img/signature.png" />
       </Section>
     </AboutMeSection>
   );
