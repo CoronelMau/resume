@@ -1,31 +1,33 @@
 import styled from "styled-components"
 
+const AboutMeSection = styled.section`
+background-color: #B4C5DB;
+padding: 4rem 10vw;
+`
+
+const Section = styled.div`
+  width: 50%; 
+`
+
+const AboutMeHeader = styled.h1`
+font-size: 32px;
+font-weight: bold;
+color:#4a5b6a;
+`
+
+const AboutMeText = styled.p`
+padding-top: 1rem;
+line-height: 1.3;
+text-align: justify;
+`
+
+const Important = styled.span`
+font-weight: bold;
+color: #4a5b6a;
+`
+
+
 const Information = () => {
-
-  const AboutMeSection = styled.section`
-  background-color: #B4C5DB;
-  padding: 4rem 10vw;
-  `
-
-  const Section = styled.div`
-    width: 50%; 
-  `
-
-  const AboutMeHeader = styled.h1`
-  font-size: 32px;
-  font-weight: bold;
-  color:#4a5b6a;
-  `
-
-  const AboutMeText = styled.p`
-  padding-top: 1rem;
-  line-height: 1.3;
-  `
-
-  const Important = styled.span`
-  font-weight: bold;
-  color: #4a5b6a;
-  `
 
   return (
     <AboutMeSection>
