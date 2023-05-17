@@ -8,6 +8,7 @@ const Header = () => {
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
+  color: #4a5b6a;
   `
 
   const MyData = styled.div`
@@ -21,7 +22,7 @@ const Header = () => {
   `
 
   const Name = styled.p`
-  font-weight: 600;
+  font-weight: bold;
   padding-left: 1rem;
   `
 
@@ -37,7 +38,7 @@ const Header = () => {
   const Link = styled.a`
   text-decoration: none;
   color: black;
-  color: #263A47;
+
   `
 
   const Contact = styled.li`

@@ -5,7 +5,7 @@ const About = () => {
   const Section = styled.section`
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem 9rem;
+  padding: 3rem 9rem;
   align-items: center;
   `
 
@@ -13,17 +13,19 @@ const About = () => {
     display: flex;
     flex-direction: column;
     width: 50%;
+    
   `
 
   const MainTitle = styled.h1`
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #263A47;
+  color: #4a5b6a;
   `
 
   const AboutText = styled.p`
   font-size: 1.1rem;
   padding: 1.5rem 0;
+  line-height: 1.2;
 `
 
   const MePhoto = styled.img`
@@ -45,7 +47,7 @@ const About = () => {
   const Link = styled.a`
   text-decoration: none;
   color: black;
-  color: #263A47;
+  color: #4a5b6a;
   `
 
   return (
