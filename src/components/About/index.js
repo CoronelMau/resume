@@ -52,7 +52,7 @@ color: #4a5b6a;
 const items = [
   { id: 1, href: "https://github.com/CoronelMau/", name: "Github" },
   { id: 2, href: "https://www.linkedin.com/in/mauricio-coronel/", name: "LinkedIn" },
-  { id: 3, href: "https://github.com/CoronelMau/", name: "Instagram" },
+  { id: 3, href: "https://www.instagram.com/m.coronel/", name: "Instagram" },
   { id: 4, href: "#", name: "Resume" }
 ];
 
