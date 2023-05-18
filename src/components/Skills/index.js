@@ -16,13 +16,13 @@ const Cards = styled.div`
 display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
+gap: 30px;
 margin: 0 10% 0 10%;
 `
 
 const Card = styled.div`
 width: 150px;
 height: 150px;
-margin-left: 3rem;
 margin-bottom: 3rem;
 display: flex;
 flex-direction: column;

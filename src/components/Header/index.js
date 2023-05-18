@@ -7,18 +7,25 @@ const Header = () => {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding-top: 2rem;
   color: #4a5b6a;
+  @media (max-width: 320px) {
+  flex-direction: column;
+}
   `
 
   const MyData = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   `
 
   const Logo = styled.img`
   height: 35px;
+  @media (max-width: 560px) {
+  display: none;
+}
   `
 
   const Name = styled.p`

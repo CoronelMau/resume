@@ -7,6 +7,11 @@ padding: 3rem 0;
 align-items: center;
 grid-template-columns: 3fr 1fr;
 gap: 100px;
+@media (max-width: 610px) {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 `
 
 const AboutMe = styled.div`
@@ -41,7 +46,8 @@ height: 368px;
 border-radius: 50%;
 padding-right: 3rem;
 @media (max-width: 768px) {
-  height: 146px;
+  height: 250px;
+  padding-right: 0rem;
 }
 `
 
@@ -49,6 +55,15 @@ const SocialMedia = styled.ul`
 display: flex;
 justify-content: space-around;
 font-size: .85rem;
+gap: 20px;
+@media (max-width: 1024px) {
+  width: 175%;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  width: 100%;
+  flex-wrap: wrap;
+}
 `
 
 const ArrowImg = styled.img`
@@ -79,7 +94,7 @@ const About = () => {
         </AboutText>
         <SocialMedia>
           {items.map(({ id, name, href }) =>
-            <li><Link href={href}>{name}<ArrowImg src="../../img/right-arrow.png" /></Link></li>
+            <li id={id}><Link href={href}>{name}<ArrowImg src="../../img/right-arrow.png" /></Link></li>
           )}
         </SocialMedia>
       </AboutMe>

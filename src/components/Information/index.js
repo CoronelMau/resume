@@ -7,6 +7,12 @@ padding: 4rem 10vw;
 
 const Section = styled.div`
   width: 50%; 
+  @media (max-width: 768px) {
+  width: 80%;
+  }
+  @media (max-width: 425px) {
+  width: 100%;
+}
 `
 
 const AboutMeHeader = styled.h1`

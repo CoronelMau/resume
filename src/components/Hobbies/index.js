@@ -17,12 +17,12 @@ display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 margin: 0 5% 0 5%;
+gap: 30px
 `
 
 const Card = styled.div`
 width: 150px;
 height: 150px;
-margin-left: 3rem;
 margin-bottom: 3rem;
 display: flex;
 flex-direction: column;

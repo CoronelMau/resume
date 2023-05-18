@@ -16,6 +16,9 @@ align-items: center;
 
 const Form = styled.form`
 width: 50%;
+@media (max-width: 768px) {
+  width: 80%;
+}
 `
 
 const Title = styled.h1`
