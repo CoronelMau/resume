@@ -9,9 +9,11 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
+
   return (
-    <div>
+    <body>
       <Header />
       <About />
       <Information />
@@ -21,7 +23,7 @@ function App() {
       <Experience />
       <Contact />
       <Footer />
-    </div>
+    </body>
   )
 }
 

@@ -55,12 +55,47 @@ const List = [
     img: "../../img/challenge.png",
     repo: "https://github.com/CoronelMau/ChallengeEncriptador"
   },
+  {
+    id: 2,
+    name: "Mini Alura",
+    description: " Flex box practice",
+    img: "../../img/flex.png",
+    repo: "https://github.com/CoronelMau/Flex-Box"
+  },
+  {
+    id: 3,
+    name: "Apeperia",
+    description: "Responsive page practice",
+    img: "../../img/responsive.png",
+    repo: "https://github.com/CoronelMau/Responsive-Layout"
+  },
+  {
+    id: 4,
+    name: "Org",
+    description: "First react project",
+    img: "../../img/org.png",
+    repo: "https://github.com/CoronelMau/REACT-First-Practice"
+  },
+  {
+    id: 5,
+    name: "Smart Bank",
+    description: "First styled components practice",
+    img: "../../img/styled-components.png",
+    repo: "https://github.com/CoronelMau/styled-components"
+  },
+  {
+    id: 6,
+    name: "Alura Food",
+    description: "Hooks and MUI components practice",
+    img: "../../img/hooks.png",
+    repo: "https://github.com/CoronelMau/hooks-react"
+  },
 ];
 
 const Experience = () => {
   return (
     <Section>
-      <Title>Professional Experience</Title>
+      <Title>Projects</Title>
 
       {List.map(({ id, name, description, img, repo }) =>
         <ProjectCard id={id}>
