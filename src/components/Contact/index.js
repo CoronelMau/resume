@@ -44,7 +44,7 @@ const Contact = () => {
 
 
   return (
-    <Section>
+    <Section id="contact">
       <Form
         onSubmit={(e) => {
           e.preventDefault();

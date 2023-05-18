@@ -42,14 +42,14 @@ const Signature = styled.img`
   padding-top: 2rem;
   height: 12rem;
   @media (max-width: 768px) {
- height: 6rem;
+  height: 6rem;
 }
 `
 
 const Information = () => {
 
   return (
-    <AboutMeSection>
+    <AboutMeSection id="information">
       <Section>
         <AboutMeHeader>About me</AboutMeHeader>
         <AboutMeText>

@@ -94,7 +94,7 @@ const List = [
 
 const Experience = () => {
   return (
-    <Section>
+    <Section id="projects">
       <Title>Projects</Title>
 
       {List.map(({ id, name, description, img, repo }) =>

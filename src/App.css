@@ -2,3 +2,13 @@ body {
   font-family: 'Monsterrat', sans-serif;
   background-color: #f1f1f1;
 }
+
+
+.navBar {
+  text-decoration: none;
+  color: black;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}

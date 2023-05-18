@@ -61,7 +61,7 @@ const mySkills = [
 
 const Skills = () => {
   return (
-    <Section>
+    <Section id="skills">
       <Title>Skills</Title>
       <Cards>
 

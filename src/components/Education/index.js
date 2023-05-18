@@ -55,7 +55,7 @@ const ListEducation = [
 
 const Education = () => {
   return (
-    <Section>
+    <Section id="education">
       <Title>Education</Title>
       <Schools>
         {ListEducation.map(({ id, img, name, year }) =>

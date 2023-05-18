@@ -17,7 +17,7 @@ display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 margin: 0 5% 0 5%;
-gap: 30px
+gap: 30px;
 `
 
 const Card = styled.div`
@@ -46,12 +46,12 @@ const myHobbies = [
   { id: 2, name: "Videogames", src: "../../img/nintendo-switch.png", alt: "Nintendo Switch image" },
   { id: 3, name: "Listen to Music", src: "../../img/headphones.png", alt: "Headphones image" },
   { id: 4, name: "Watch movies", src: "../../img/film.png", alt: "Film image" },
-  { id: 5, name: "Legos", src: "../../img/blocks.png", alt: "Legos image" }
+  { id: 5, name: "Legos", src: "../../img/blocks.png", alt: "Legos image" },
 ]
 
 const Hobbies = () => {
   return (
-    <Section>
+    <Section id="hobbies">
       <Title>Hobbies</Title>
       <Cards>
         {myHobbies.map(({ id, name, src, alt }) =>
