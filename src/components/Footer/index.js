@@ -11,9 +11,14 @@ const Important = styled.span`
 font-weight: bold;
 `
 
+const Logo = styled.img`
+height: 50px;
+`
+
 const Footer = () => {
   return (
     <Section>
+      <Logo src="../../img/logo.png" />
       <h1>Created by <Important>Mauricio Coronel</Important></h1>
       <h2>2023</h2>
     </Section>

@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { useRef } from "react";
 import TextField from '@mui/material/TextField';
 import Button from "@mui/material/Button"
 import { validName, validEmail, validSubject } from "./validation";
-import emailjs from '@emailjs/browser';
 
 const Section = styled.section`
 margin-top: 3rem;
@@ -38,17 +36,12 @@ padding-bottom: 1rem;
 
 const Contact = () => {
 
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_r4j58s9', 'template_aky01jt', form.current, 'I8gqrUo4jzFM1SqQH')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    console.log(name.value);
+    console.log(email.value);
+    console.log(subject.value);
+    console.log(observation.value);
   };
 
   //UseState
@@ -60,9 +53,10 @@ const Contact = () => {
 
   return (
     <Section id="contact">
-      <Form ref={form} onSubmit={sendEmail}>
+      <Form onSubmit={sendEmail}>
         <Title>Contact </Title>
-        <Text>Want to contact me? Fill the following fields and I will get in touch with you soon! </Text>
+        <Text>The form is only for demonstration, but you can
+          press the button to send an email and I will get in touch with you soon! </Text>
 
         <TextField
           fullWidth
@@ -70,7 +64,6 @@ const Contact = () => {
           variant="filled"
           margin="normal"
           required
-          name="user_name"
           error={!name.valid}
           helperText={!name.valid && "Invalid name"}
           onChange={(input) => {
@@ -87,7 +80,6 @@ const Contact = () => {
           variant="filled"
           margin="normal"
           required
-          name="user_email"
           error={!email.valid}
           helperText={!email.valid && "Invalid email"}
           onChange={(input) => {
@@ -104,7 +96,6 @@ const Contact = () => {
           variant="filled"
           margin="normal"
           required
-          name="subject"
           error={!subject.valid}
           helperText={!subject.valid && "Invalid subject"}
           onChange={(input) => {
@@ -123,10 +114,12 @@ const Contact = () => {
           variant="filled"
           fullWidth
           margin="normal"
-          name="message"
           onChange={(input) => setObservation({ value: input.target.value, valid: true })}
         />
-        <Button type="submit" variant="contained">Submit</Button>
+        <Button type="submit" variant="contained"
+          href="mailto:8mau.coronel@gmail.com">
+          Send Email
+        </Button>
       </Form>
     </Section>
   );
