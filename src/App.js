@@ -71,7 +71,7 @@ function App() {
       <body>
         <StyledHeader>
           <MyData>
-            <Logo src="../../img/Logo.png" />
+            <Logo src="../../img/Logo.png" alt="Coronel Logo" />
             <Name>Mauricio Coronel</Name>
           </MyData>
           <Navigation>
