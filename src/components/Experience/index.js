@@ -53,7 +53,7 @@ const List = [
     name: "Text Encrypter",
     description: "Alura challenge",
     img: "../../img/challenge.png",
-    repo: "https://github.com/CoronelMau/ChallengeEncriptador"
+    repo: "https://github.com/CoronelMau/ChallengeEncriptador",
   },
   {
     id: 2,

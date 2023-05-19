@@ -34,6 +34,7 @@ const Logo = styled.img`
 height: 35px;
 @media (max-width: 560px) {
 display: none;
+display: hidden;
 }
 `
 
