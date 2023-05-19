@@ -81,7 +81,8 @@ const List = [
     name: "Smart Bank",
     description: "First styled components practice",
     img: "../../img/styled-components.png",
-    repo: "https://github.com/CoronelMau/styled-components"
+    repo: "https://github.com/CoronelMau/styled-components",
+    demo: "https://styled-components-aphg7b4k0-coronelmau.vercel.app/"
   },
   {
     id: 6,
@@ -97,15 +98,15 @@ const Experience = () => {
     <Section id="projects">
       <Title>Projects</Title>
 
-      {List.map(({ id, name, description, img, repo }) =>
+      {List.map(({ id, name, description, img, repo, demo }) =>
         <ProjectCard id={id}>
           <ProjectImg src={img} />
           <div>
             <ProjectTitle>{name}</ProjectTitle>
             <ProjectDesciption>{description}</ProjectDesciption>
             <Stack spacing={1} direction="row">
-              <Button href={repo} variant="outlined">Repository</Button>
-              <Button variant="contained">Demo</Button>
+              <Button target="_blank" href={repo} variant="outlined">Repository</Button>
+              <Button target="_blank" href={demo} variant="contained">Demo</Button>
             </Stack>
           </div>
         </ProjectCard>)}
