@@ -100,7 +100,7 @@ const Experience = () => {
 
       {List.map(({ id, name, description, img, repo, demo }) =>
         <ProjectCard id={id}>
-          <ProjectImg src={img} />
+          <ProjectImg src={img} alt="Project img" />
           <div>
             <ProjectTitle>{name}</ProjectTitle>
             <ProjectDesciption>{description}</ProjectDesciption>
