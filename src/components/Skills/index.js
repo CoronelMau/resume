@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Section = styled.section`
-padding-top: 4rem;
+padding-top: 2rem;
 `
 
 const Title = styled.h1`
@@ -17,7 +17,7 @@ display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 gap: 30px;
-margin: 0 10% 0 10%;
+margin: 0 5% 0 5%;
 `
 
 const Card = styled.div`
