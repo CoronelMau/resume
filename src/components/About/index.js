@@ -82,7 +82,7 @@ const items = [
   { id: 1, href: "https://github.com/CoronelMau/", name: "Github" },
   { id: 2, href: "https://www.linkedin.com/in/mauricio-coronel/", name: "LinkedIn" },
   { id: 3, href: "https://www.instagram.com/m.coronel/", name: "Instagram" },
-  { id: 4, href: "#", name: "Resume" }
+  { id: 4, href: "https://drive.google.com/file/d/1kbe_Zbz5m5ltqe4OHlsqryCk1l1kP2hf/view?usp=sharing", name: "Resume" }
 ];
 
 const About = () => {

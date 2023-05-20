@@ -54,27 +54,31 @@ const List = [
     description: "Alura challenge",
     img: "../../img/challenge.png",
     repo: "https://github.com/CoronelMau/ChallengeEncriptador",
+    demo: "https://coronelmau.github.io/ChallengeEncriptador/"
   },
   {
     id: 2,
     name: "Mini Alura",
     description: " Flex box practice",
     img: "../../img/flex.png",
-    repo: "https://github.com/CoronelMau/Flex-Box"
+    repo: "https://github.com/CoronelMau/Flex-Box",
+    demo: "https://coronelmau.github.io/Flex-Box/"
   },
   {
     id: 3,
     name: "Apeperia",
     description: "Responsive page practice",
     img: "../../img/responsive.png",
-    repo: "https://github.com/CoronelMau/Responsive-Layout"
+    repo: "https://github.com/CoronelMau/Responsive-Layout",
+    demo: "https://coronelmau.github.io/Responsive-Layout/"
   },
   {
     id: 4,
     name: "Org",
     description: "First react project",
     img: "../../img/org.png",
-    repo: "https://github.com/CoronelMau/REACT-First-Practice"
+    repo: "https://github.com/CoronelMau/REACT-First-Practice",
+    demo: "https://coronelmau.github.io/REACT-First-Practice/"
   },
   {
     id: 5,
@@ -89,7 +93,8 @@ const List = [
     name: "Alura Food",
     description: "Hooks and MUI components practice",
     img: "../../img/hooks.png",
-    repo: "https://github.com/CoronelMau/hooks-react"
+    repo: "https://github.com/CoronelMau/hooks-react",
+    demo: "https://coronelmau.github.io/hooks-react/"
   },
 ];
 
