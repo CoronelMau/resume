@@ -16,7 +16,7 @@ align-items: center;
 
 const Form = styled.form`
 width: 50%;
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   width: 80%;
 }
 `

@@ -7,10 +7,10 @@ padding: 4rem 10vw;
 
 const Section = styled.div`
   width: 50%; 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
   width: 80%;
   }
-  @media (max-width: 425px) {
+  @media  screen and(max-width: 425px) {
   width: 100%;
 }
 `
@@ -19,7 +19,7 @@ const AboutMeHeader = styled.h1`
 font-size: 32px;
 font-weight: bold;
 color:#4a5b6a;
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   font-size: 22px;
 }
 `
@@ -28,7 +28,7 @@ const AboutMeText = styled.p`
 padding-top: 1rem;
 line-height: 1.3;
 text-align: justify;
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   font-size: 14px;
 }
 `
@@ -41,7 +41,7 @@ color: #4a5b6a;
 const Signature = styled.img`
   padding-top: 2rem;
   height: 12rem;
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
   height: 6rem;
 }
 `

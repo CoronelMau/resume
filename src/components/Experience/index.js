@@ -19,7 +19,7 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 margin-bottom: 8rem;
-@media (max-width: 768px) {
+@media screen and(max-width: 768px) {
   flex-direction: column;
   margin-bottom: 4rem;
 }
@@ -28,7 +28,7 @@ margin-bottom: 8rem;
 const ProjectImg = styled.img`
   width: 50%;
   box-shadow: 10px 10px 30px 10px rgba(0,0,0,0.1);
-  @media (max-width: 768px) {
+  @media screen and(max-width: 768px) {
   width: 80%;
 }
 `
@@ -37,7 +37,7 @@ const ProjectTitle = styled.h1`
   font-weight: bold;
   font-size: 1.5rem;
   color: #4a5b6a;
-  @media (max-width: 768px) {
+  @media screen and(max-width: 768px) {
   padding-top: 1rem;
 }
 `

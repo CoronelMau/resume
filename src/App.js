@@ -19,7 +19,7 @@ justify-content: space-around;
 align-items: center;
 padding-top: 2rem;
 color: #4a5b6a;
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
 flex-direction: column;
 }
 `
@@ -32,7 +32,7 @@ justify-content: space-around;
 
 const Logo = styled.img`
 height: 35px;
-@media (max-width: 560px) {
+@media screen and (max-width: 560px) {
 display: none;
 }
 `
