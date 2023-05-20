@@ -10,7 +10,7 @@ const Section = styled.div`
   @media screen and (max-width: 768px) {
   width: 80%;
   }
-  @media  screen and(max-width: 425px) {
+  @media  screen and (max-width: 425px) {
   width: 100%;
 }
 `

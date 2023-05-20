@@ -41,7 +41,7 @@ const SchoolName = styled.h1`
 font-weight: bold;
 color: #4a5b6a;
 font-size: 1.2rem;
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   font-size: 18px;
 }
 `
