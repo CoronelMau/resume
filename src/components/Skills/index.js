@@ -48,6 +48,8 @@ const mySkills = [
   { id: 3, name: "JavaScript", src: "../../img/java-script.png", alt: "JS image" },
   { id: 4, name: "Java", src: "../../img/java.png", alt: "Java image" },
   { id: 5, name: "React", src: "../../img/react.png", alt: "React image" },
+  { id: 14, name: "PHP", src: "../../img/php.png", alt: "PHP image" },
+  { id: 15, name: "Python", src: "../../img/python.png", alt: "Python image" },
   { id: 6, name: "Git", src: "../../img/git.png", alt: "Git image" },
   { id: 7, name: "AutoCad", src: "../../img/dwg.png", alt: "Autocad image" },
   { id: 8, name: "3D Studio Max", src: "../../img/max.png", alt: "3ds Max image" },
