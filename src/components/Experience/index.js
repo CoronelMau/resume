@@ -96,6 +96,23 @@ const List = [
     repo: "https://github.com/CoronelMau/hooks-react",
     demo: "https://coronelmau.github.io/hooks-react/"
   },
+  {
+    id: 7,
+    name: "Todo list",
+    description: "Todo notes with NodeJs and MongoDB",
+    img: "../../img/todo-list.png",
+    repo: "https://github.com/CoronelMau/todo-list",
+    demo: null,
+    backend: 'https://github.com/CoronelMau/todo-services',
+  },
+  {
+    id: 8,
+    name: "Game of Life",
+    description: "Pure JavaScript practice",
+    img: "../../img/game-life.png",
+    repo: "https://github.com/CoronelMau/game-of-life",
+    demo: 'https://game-of-life-fawn-five.vercel.app/',
+  },
 ];
 
 const Experience = () => {
@@ -103,15 +120,17 @@ const Experience = () => {
     <Section id="projects">
       <Title>Projects</Title>
 
-      {List.map(({ id, name, description, img, repo, demo }) =>
-        <ProjectCard id={id}>
+      {List.map(({ id, name, description, img, repo, demo, backend }) =>
+        <ProjectCard key={id}>
           <ProjectImg src={img} alt="Project img" />
           <div>
             <ProjectTitle>{name}</ProjectTitle>
             <ProjectDesciption>{description}</ProjectDesciption>
             <Stack spacing={1} direction="row">
               <Button target="_blank" href={repo} variant="outlined">Repository</Button>
-              <Button target="_blank" href={demo} variant="contained">Demo</Button>
+              <Button target="_blank" href={demo !== null ? demo : backend} variant="contained">
+                {demo !== null ? 'Demo' : 'Backend'}
+                </Button>
             </Stack>
           </div>
         </ProjectCard>)}
