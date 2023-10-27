@@ -82,7 +82,7 @@ const items = [
   { id: 1, href: "https://github.com/CoronelMau/", name: "Github" },
   { id: 2, href: "https://www.linkedin.com/in/mauricio-coronel/", name: "LinkedIn" },
   { id: 3, href: "https://www.instagram.com/m.coronel/", name: "Instagram" },
-  { id: 4, href: "https://drive.google.com/file/d/1xVuM7k4QiFpDmLgVJnHZVWhp97fnvJna/view?usp=sharing", name: "Resume" },
+  { id: 4, href: "https://drive.google.com/drive/u/0/folders/1C4dPUWLaVu1mDJ65XYSOsvSm-jqFfpi0", name: "Resume" },
   { id: 5, href: "https://app.aluracursos.com/user/8mau-coronel", name: "Alura" },
 ];
 
