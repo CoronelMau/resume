@@ -77,7 +77,7 @@ const List = [
     description: 'First react project',
     img: '../../img/org.png',
     repo: 'https://github.com/CoronelMau/REACT-First-Practice',
-    demo: 'https://coronelmau.github.io/REACT-First-Practice/',
+    demo: 'https://react-first-practice-n94umfxqd-coronelmau.vercel.app/',
   },
   {
     id: 5,
