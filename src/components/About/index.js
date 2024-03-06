@@ -88,7 +88,7 @@ const items = [
   { id: 3, href: 'https://www.instagram.com/m.coronel/', name: 'Instagram' },
   {
     id: 4,
-    href: 'https://drive.google.com/file/d/1gErZwcaMfr8ETYJmSV_DM3r2x0tlwk6j/view',
+    href: 'https://drive.google.com/file/d/1ETw3wGFOW1KOn8SFPbZAQnAQjQSKFk_T/view',
     name: 'Resume',
   },
   {
